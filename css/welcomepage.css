@@ -71,94 +71,16 @@
 	font-size:12px;
 }
 
-footer {
-  
-  padding: 20px;
-  background-color: RGB(204, 204, 198);
-  color: black;
-  font-size:12px;
-  width:100%;
-  margin:auto;
-  
-  
-  
-}
 
 
 
 
-.personalData {
-	
-	flex-wrap:wrap;
-	text-align:center;
-}
-
-
-
-.sites{
-	flex-basis:20%;	
-	
-}
 
 
 
 
-footer a{
-	color: RGB(12,12,12);
-}
-
-.login{grid-area: login;}
-footer  {grid-area: foot; }
-
-body {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "foot"
-		"login";
-}
-
-@media all and (min-width: 750px) {
-	
-	.login{
-		position:absolute;
-	}
-	
-	footer {
-  
-        padding: 20px;
-        background-color: RGB(204, 204, 198);
-        color: black;
-        font-size:12px;
-        position:fixed;
-        height:50px;
-  
-  
-  
-}
-
-.personalData {
-	display:flex;
-	flex-wrap:wrap;
-	text-align:center;
-	
-}
 
 
 
-.sites{
-	flex-basis:25%;	
-	
-}
-	
-	body {
-        grid-template-columns: 5px;
-        grid-template-areas:
-            "foot"
-            "login";
-    }
-	
-	
-	
-}
+
+
