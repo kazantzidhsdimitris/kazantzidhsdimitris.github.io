@@ -1,0 +1,20 @@
+{
+  "short_name": "My Calculator",
+  "name": "Basic Calculator",
+  "icons": [
+    {
+      "src": "/assets/calc192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/calc512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "white",
+  "display": "standalone",
+  "description": "Basic Calculator"
+}

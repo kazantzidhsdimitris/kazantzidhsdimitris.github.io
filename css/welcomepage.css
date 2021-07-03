@@ -1,0 +1,163 @@
+ @charset "utf-8";
+        @import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+        [class*="fontawesome-"]:before {
+          font-family: 'FontAwesome', sans-serif;
+        }
+
+        body {
+          background: #f5edd6;
+          font: 87.5%/1.5em 'Open Sans', sans-serif;
+          margin: 0;
+        }
+
+        p {
+          line-height: 1.5em;
+		  font-size:15px;
+        }
+
+        after { clear: both; }
+
+        .login {
+          position: absolute;
+          width: 320px;
+          height: 200px;
+          z-index: 15;
+          top: 50%;
+          left: 50%;
+          margin: -100px 0 0 -150px;
+		  color:black;
+        }
+
+        .login form {
+          margin: 0px;
+          padding: 22px 22px 22px 22px;
+          width: 100%;
+          border-radius: 5px;
+          background: RGB(238, 242, 189);
+          border: 3px solid RGB(0, 0, 0);
+          
+        }
+
+        .login form span {
+          background-color: RGB(238, 242, 189);
+          border-radius: 3px 0px 0px 3px;
+          border-right: 3px solid RGB(0, 0, 0));
+          color: #606468;
+          display: block;
+          float: left;
+          line-height: 50px;
+          text-align: center;
+          width: 50px;
+          height: 50px;
+        }
+		
+
+        .login form input[type="button"] {
+          background: RGB(255, 223, 97);
+          width: 100%;
+          height: 40px;
+          border-radius: 3px;
+          color: black;
+          cursor: pointer;
+          transition: background 0.3s ease-in-out;
+        }
+        .login form input[type="button"]:hover {
+          background: RGB(214, 207, 180);
+        }
+		
+.tips{
+	font-style:italic;
+	font-size:12px;
+}
+
+footer {
+  
+  padding: 20px;
+  background-color: RGB(204, 204, 198);
+  color: black;
+  font-size:12px;
+  width:100%;
+  margin:auto;
+  
+  
+  
+}
+
+
+
+
+.personalData {
+	
+	flex-wrap:wrap;
+	text-align:center;
+}
+
+
+
+.sites{
+	flex-basis:20%;	
+	
+}
+
+
+
+
+footer a{
+	color: RGB(12,12,12);
+}
+
+.login{grid-area: login;}
+footer  {grid-area: foot; }
+
+body {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "foot"
+		"login";
+}
+
+@media all and (min-width: 750px) {
+	
+	footer {
+  
+  padding: 20px;
+  background-color: RGB(204, 204, 198);
+  color: black;
+  font-size:12px;
+  position:fixed;
+  height:50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  
+  
+}
+
+.personalData {
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+	
+}
+
+
+
+.sites{
+	flex-basis:25%;	
+	
+}
+	
+	body {
+        grid-template-columns: 5px;
+        grid-template-areas:
+            "login"
+            "foot";
+    }
+	
+	
+	
+}
